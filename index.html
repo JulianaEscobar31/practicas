@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="d-flex justify-content-center">
-                <form action="" id="registro">
-                    <h1 id="id" class="animacion">FORMULARIO </h1>  
-                    <div class="mb-3">
-                        <label for="Nombre" class="form-label">Nombres Completos: </label>
-                        <input type="text" name="nombre" class="form-control">
-                    </div>                  
-                    <div class="mb-3">
-                        <label for="Usuario" class="form-label">Usuario: </label>
-                        <input type="text" name="usuario" class="form-control">  
-                    </div>
-                    <div class="mb-3">
-                        <label for="Contraseña" class="form-label">Contraseña: </label>
-                        <input type="password" password="contraseña" class="form-control" id="pass1" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Contraseña" class="form-label">Repita su contraseña: </label>
-                        <input type="password" password="contraseña" class="form-control" id="pass2" required>
-                    </div>  
-                    <div class="cont">
-                        <button onclick="boton()" type="button" class="btn btn-primary">Enviar</button>
-                    </div>                                                                    
-                </form>                                                                                             
-            </div>
-        </div>
+    <h1>HOJA DE VIDA</h1>
+    <div class="contenedor">
+        
+        <section class="image">
+            <img style="border-radius: 50%;" src="https://scontent.fuio13-1.fna.fbcdn.net/v/t39.30808-6/279590030_4997230387057980_7751823866680557120_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=FjK17NgeVp4AX__tjGW&_nc_ht=scontent.fuio13-1.fna&oh=00_AT8C9F2eeTnzwmoz6PndqM6lE5O692VgGJDjVHHvs_cdlg&oe=62D164D5" alt="Mifoto" width="200" height="200">
+            <p>Juliana Escobar</p>
+        </section>
+        <section class="myprofile">
+            PUESTO LABORAL
+            <P>Mi descripción</P>    
+            <p>
+                Mi nombre es Juliana Escobar, tengo 20 años, nací el 31 de Julio del 2001.
+                Estudio en la Universidad de las Fuerzas Armadas - ESPE, la carrera de Tecnologías
+                de la Información.
+            </p>
+        </section>
+        <section class="socialmedia">
+            REDES SOCIALES
+            <p>
+                <a href="https://www.facebook.com/JulianaEscobar3107/">Facebook: https://www.facebook.com/
+                    JulianaEscobar3107/ </a>
+            </p>
+        </section>
+        <section class="lastjob">
+            ÚLTIMO TRABAJO
+            <p>Mi último trabajo fue en un restaurante, donde trabajaba los fin de semanas todo el día.</p>
+        </section>  
+        <section class="mystudies">MIS ESTUDIOS
+            <ul>
+                <li>Universidad de las Fuerzas Armadas - ESPE</li>
+                <li>Curso de programación</li>
+            </ul>
+        </section>
+        <section class="myskills">
+            MIS HABILIDADES
+            <ul>
+                <li>Trabajar bien en equipo </li>
+                <li>Creatividad</li>
+                <li>Responsabilidad</li>
+            </ul>
+        </section>
     </div>
-    <!--<script>
-        if(pass1.value == pass2.value){
-            e.preventDefault();
-            err.innerHTML="Las contraseñas no coinciden";
-            setTimeout(()=>{
-                err.innerHTML="";
-            }, 1200);
-        }
-    </script>-->
-    <script defer src="./main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 </html>

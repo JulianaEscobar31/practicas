@@ -1,33 +1,53 @@
-#registro{
-    transition: all 1s ease-in-out;
+*{
+    padding:1%;
+    margin:0%;
+    box-sizing: border-box;
 }
 
-#registro{
-    margin-top: 42px;
-    background: rgba(213, 206, 248, 0.884);
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 16px;
-    box-shadow: 8px 8px 12px rgb(90, 76, 141);    
+html{
+    font-size: 150%;
 }
 
-.animacion{
-    animation-name: cambio;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+.contenedor{
+    display: grid;
+    grid-template-columns: 30rem;
+    grid-template-areas: "image myprofile"
+                    "socialmedia lastjob"
+                    "mystudies myskills"; 
+    background-color: azure;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 33.33vh 33.33vh 33.33vh;
 }
 
-@keyframes cambio {
-    0%, 100%{
-        color: aliceblue;
-    }
-    50%{
-        color:black;
-    }
-    75%{
-        color: rgb(74, 50, 158);
-    }
+.item{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(158, 55, 55);
+    font-size: 2.4rem;
+    border: 100rem solid khaki;
+    outline: 10rem solid khaki;
+}
+
+.image{
+    grid-area: image;
+}
+
+.myprofile{
+    grid-area: myprofile;
+}
+
+.socialmedia{
+    grid-area: socialmedia;
+}
+
+.lastjob{
+    grid-area: lastjob;
+}
+
+.mystudies{
+    grid-area: mystudies;
+}
+
+.myskills{
+    grid-area: myskills;
 }
