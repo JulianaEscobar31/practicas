@@ -31,3 +31,11 @@
         color: rgb(74, 50, 158);
     }
 }
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}

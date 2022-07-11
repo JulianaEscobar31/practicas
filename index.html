@@ -26,15 +26,22 @@
                         <input type="text" name="usuario" class="form-control">  
                     </div>
                     <div class="mb-3">
-                        <label for="Contraseña" class="form-label">Contraseña: </label>
-                        <input type="password" password="contraseña" class="form-control" id="pass1" required>
+                        <label for="Contraseña 1" class="form-label">Contraseña: </label>
+                        <input type="password" password="contraseña" class="form-control" id="clave1">
                     </div>
                     <div class="mb-3">
-                        <label for="Contraseña" class="form-label">Repita su contraseña: </label>
-                        <input type="password" password="contraseña" class="form-control" id="pass2" required>
+                        <label for="Contraseña 2" class="form-label">Repita su contraseña: </label>
+                        <input type="password" password="contraseña" class="form-control" id="clave2" required>
                     </div>  
                     <div class="cont">
-                        <button onclick="boton()" type="button" class="btn btn-primary">Enviar</button>
+                        <button onclick="verificarContraseñas()" type="button" class="btn btn-primary">Enviar</button>
+                        <div id="msg"></div>
+                         <div id="error" class="alert alert-danger ocultar" role="alert">
+                            Las contraseñas no coinciden, vuelve a intentar !
+                        </div>
+                        <div id="ok" class="alert alert-success ocultar" role="alert">
+                            Las contraseñas coinciden   
+                          </div>                        
                     </div>                                                                    
                 </form>                                                                                             
             </div>
