@@ -1,0 +1,41 @@
+#registro{
+    transition: all 1s ease-in-out;
+}
+
+#registro{
+    margin-top: 42px;
+    background: rgba(213, 206, 248, 0.884);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 12px rgb(90, 76, 141);    
+}
+
+.animacion{
+    animation-name: cambio;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambio {
+    0%, 100%{
+        color: aliceblue;
+    }
+    50%{
+        color:black;
+    }
+    75%{
+        color: rgb(74, 50, 158);
+    }
+}
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
