@@ -1,0 +1,99 @@
+*{
+    padding:0px;
+    margin:0px;
+    border: 0px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "navegacion navegacion"
+                        "info image";
+    background-color: rgb(221, 181, 0);
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 80vh;
+}
+
+
+.navegacion{    
+    display: grid;
+    grid-area: navegacion;
+    font-size: 150%;
+    padding: 1rem 3rem;
+    grid-template-areas: "texto opciones boton";
+    grid-template-columns: 50vw 30vw 10vw;
+}
+
+.texto{
+    font-weight:bolder;
+    grid-area: texto;
+}
+
+.opciones{
+    grid-area: opciones;
+    grid-template-areas: "products about contact";
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+}
+
+.products{
+    grid-area: products;
+}
+
+.about{
+    grid-area: about;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+.boton{
+    grid-area: boton;
+    grid-template-areas: "txt img2";
+    grid-template-columns: 30vw 70vw;
+    background-color: white;
+}
+
+.txt{
+    grid-area: txt;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.info{
+    grid-area: info;
+    grid-template-areas: "txt2 boton2";
+    grid-template-rows: 50vh 50vh;
+    padding: 5rem 5rem;
+    font-size: 375%;
+    font-weight: bold;
+}
+
+.txt2{
+    grid-area: txt2;
+}
+
+.boton2{
+    grid-area: boton2;
+    grid-template-areas: "txt3 img3";
+}
+
+.txt3{
+    grid-area: txt3;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.tamanio{
+    grid-area: tamanio;
+    padding: 5rem 5rem;
+    font-size: 150%;
+    font-weight: 100% ;
+}
+
+.image{
+    grid-area: image;
+}
